@@ -67,6 +67,10 @@
     <arg name="robot" value="$(arg robot)" />
   </include>
 
+
+  <!-- View controller -->
+  <include file="$(find robotino_bringup)/launch/start_view_controller.launch" >
+
   <!-- Simple node to move the kinect in the default position on robot's startup
        It also exposes a service /tilt_controller/resetPosition -->
   <node name="robotino_tilt_controller" pkg="robotino_driver" type="robotino_tilt_controller" output="screen">
